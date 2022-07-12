@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Care Reminder</title>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  </head>
+
+  <body
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #f5f5f5;
+    "
+  >
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        color: #fefefe;
+        line-height: 1px;
+        font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+      "
+    >
+      Your Children’s Wisconsin provider has prescribed content for you to view.
+    </div>
+    <center
+      style="
+        width: 100%;
+        border-top: 15px solid #0074c8;
+        background-color: #ffffff;
+      "
+    >
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="max-width: 600px; margin: 10px 10px"
+        align="center"
+        width="100%"
+      >
+        <tr>
+          <td align="left" bgcolor="#ffffff" style="padding: 0 0 0 0">
+            <div align="left" style="padding: 0 0 30px 0" valign="middle">
+              <img
+                alt="Logo"
+                border="0"
+                height="80"
+                width="240"
+                src="https://childrenswi.org/-/media/chwlibrary/images/logos/cw_2color_900px.jpg?h=80&w=240&hash=4D713F4AD66D319F7B1707464455C4B5"
+              />
+            </div>
+            <div
+              align="left"
+              style="
+                margin: 10px 0 30px 0;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+                color: #333333;
+              "
+            >
+              Dear {{recipient.patient_name}},
+              <br /><br />
+              Your Children's Wisconsin provider has prescribed digital care
+              content as a follow up to your appointment.<br />
+              You must enter {{recipient.patient_name}}'s birthdate to open the
+              content. <a
+              href="SMS:body=Hi%20there%20Some%20text%20to%20get%20you%20started...">Share this link with a</text></a>
+            </div>
+            <div>
+              <a
+                href="{{{recipient.link_url}}}"
+                style="
+                  font-size: 16px;
+                  font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+                  color: #ffffff;
+                  background-color: #0074c8;
+                  border-radius: 4px;
+                  text-decoration: none;
+                  padding: 10px 10px;
+                  display: inline-block;
+                  width: auto;
+                "
+                target="_blank"
+                >View content now</a
+              >
+              <br />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td
+            align="left"
+            style="
+              padding: 0 0 40px 0;
+              margin: 0 0 40px 0;
+              font-size: 16px;
+              line-height: 22px;
+              font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+              color: #333333;
+            "
+          >
+            <small
+              >Or copy and paste the URL below into your internet browser:
+              <span
+                style="
+                  display: block;
+                  width: auto;
+                  max-width: 600px;
+                  overflow-wrap: break-all;
+                  -webkit-word-break: break-all;
+                  -webkit-word-wrap: break-all;
+                  word-break: break-all;
+                "
+              >
+                {{{recipient.link_url}}}
+              </span></small
+            >
+            <br />
+            <br />
+            Sincerely,
+            <br />
+            Your Children's Wisconsin care team
+            <br />
+          </td>
+        </tr>
+      </table>
+    </center>
+    <center style="width: 100%; background-color: #f5f5f5">
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        style="max-width: 600px; padding: 40px 0 20px 0; margin: 10px 10px"
+        align="center"
+        width="100%"
+      >
+        <tr>
+          <td></td>
+          <td
+            align="left"
+            style="
+              padding: 0 0 0 0;
+              margin: 0 0 10px 0;
+              font-size: 16px;
+              line-height: 22px;
+              font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+              color: #333333;
+            "
+          >
+            <small>
+              This message originates from Children's Wisconsin, and may contain
+              information that is privileged and confidential. It is intended
+              only for the use of the designated recipient. Any review,
+              dissemination, distribution, or copying of this message by anyone
+              other than the intended recipient is prohibited. All personal
+              messages express views solely of the sender, are not to be
+              attributed to Children's Wisconsin, and may not be copied or
+              distributed without this disclaimer. If you have received this
+              message in error, please notify the sender and destroy the
+              original message. Thank you.
+            </small>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
